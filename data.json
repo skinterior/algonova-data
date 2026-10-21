@@ -5,17 +5,17 @@
   [
    "Nifty above 200-day average",
    false,
-   "23085 vs 24160"
+   "22811 vs 24158"
   ],
   [
    "Nifty above 20-day average",
    true,
-   "23085 vs 22802"
+   "22811 vs 22788"
   ],
   [
    "India VIX between 12 and 20",
    true,
-   "15.0"
+   "15.7"
   ],
   [
    "Opening gap under 1%",
@@ -25,32 +25,32 @@
   [
    "Breadth: 50%+ stocks above 50-day avg",
    false,
-   "7/25"
+   "6/25"
   ]
  ],
  "signals": [
   {
    "sym": "KOTAKBANK",
-   "mom6m": 17.7,
-   "ref": 445.6,
+   "mom6m": 15.7,
+   "ref": 437.8,
    "qty": 0,
-   "stop": 409.95,
-   "date": "2026-10-21"
-  },
-  {
-   "sym": "ICICIBANK",
-   "mom6m": 4.3,
-   "ref": 1402.9,
-   "qty": 0,
-   "stop": 1290.67,
+   "stop": 402.78,
    "date": "2026-10-21"
   },
   {
    "sym": "BHARTIARTL",
    "mom6m": 3.8,
-   "ref": 1891.9,
+   "ref": 1891.7,
    "qty": 0,
-   "stop": 1740.55,
+   "stop": 1740.36,
+   "date": "2026-10-21"
+  },
+  {
+   "sym": "HCLTECH",
+   "mom6m": 3.6,
+   "ref": 1424.2,
+   "qty": 0,
+   "stop": 1310.26,
    "date": "2026-10-21"
   }
  ]
