@@ -35,6 +35,15 @@
    "ref": 1422.2,
    "qty": 0,
    "stop": 1308.42,
+   "alertLevels": {
+    "a10": 1564.42,
+    "a15": 1635.53,
+    "a20": 1706.64
+   },
+   "replay": {
+    "n": 1,
+    "note": "too few replay windows to say anything"
+   },
    "date": "2026-10-23"
   },
   {
@@ -43,6 +52,16 @@
    "ref": 430.5,
    "qty": 0,
    "stop": 396.06,
+   "alertLevels": {
+    "a10": 473.55,
+    "a15": 495.07,
+    "a20": 516.6
+   },
+   "replay": {
+    "n": 48,
+    "winPct": 52,
+    "median20dGrossPct": 1.1
+   },
    "date": "2026-10-23"
   },
   {
@@ -51,7 +70,20 @@
    "ref": 1892.1,
    "qty": 0,
    "stop": 1740.73,
+   "alertLevels": {
+    "a10": 2081.31,
+    "a15": 2175.91,
+    "a20": 2270.52
+   },
+   "replay": {
+    "n": 58,
+    "winPct": 60,
+    "median20dGrossPct": 1.4
+   },
    "date": "2026-10-23"
   }
- ]
+ ],
+ "replayMethod": "Setup = symbol in daily 6m-momentum top3 among universe members above their own 50dma, computed from close of day t. Entry at close t+1 (signal is only knowable after close t), exit at close 20 trading days later. GROSS of costs and slippage - the app applies 0.25% cost at open in paper P&L. A symbol can qualify on many consecutive days, so windows overlap and n overstates the number of independent bets. winPct = share of windows with positive GROSS return over 20 trading days; it is NOT the odds of hitting an alert level and NOT an expected profit. Small sample, 2y Yahoo data only.",
+ "alertNote": "alertLevels are price-alert thresholds (+10/+15/+20% from ref) matching the app's profit alerts. They are NOT validated strategy exits; the only strategy exit remains the 8% stop.",
+ "notes": "Paper-only. News/earnings monitor: no reliable free NSE source - not included."
 }
