@@ -5,22 +5,22 @@
   [
    "Nifty above 200-day average",
    true,
-   "25030 vs 23999"
+   "25045 vs 23996"
   ],
   [
    "Nifty above 20-day average",
    true,
-   "25030 vs 23117"
+   "25045 vs 23243"
   ],
   [
    "India VIX between 12 and 20",
    true,
-   "17.5"
+   "17.4"
   ],
   [
    "Opening gap under 1%",
    true,
-   "+0.01% (last day open vs prior close)"
+   "+0.18% (last day open vs prior close)"
   ],
   [
    "Breadth: 50%+ stocks above 50-day avg",
