@@ -1,26 +1,26 @@
 {
- "asof": "2026-11-11",
+ "asof": "2026-11-12",
  "label": "Trade",
  "checks": [
   [
    "Nifty above 200-day average",
    true,
-   "25255 vs 23994"
+   "25299 vs 23992"
   ],
   [
    "Nifty above 20-day average",
    true,
-   "25255 vs 23387"
+   "25299 vs 23516"
   ],
   [
    "India VIX between 12 and 20",
    true,
-   "17.6"
+   "16.6"
   ],
   [
    "Opening gap under 1%",
-   false,
-   "+1.17% (last day open vs prior close)"
+   true,
+   "-0.16% (last day open vs prior close)"
   ],
   [
    "Breadth: 50%+ stocks above 50-day avg",
@@ -31,57 +31,57 @@
  "signals": [
   {
    "sym": "KOTAKBANK",
-   "mom6m": 28.2,
-   "ref": 487.7,
+   "mom6m": 30.7,
+   "ref": 490.4,
    "qty": 0,
-   "stop": 448.68,
+   "stop": 451.17,
    "alertLevels": {
-    "a10": 536.47,
-    "a15": 560.85,
-    "a20": 585.24
+    "a10": 539.44,
+    "a15": 563.96,
+    "a20": 588.48
    },
    "replay": {
-    "n": 46,
-    "winPct": 67,
-    "median20dGrossPct": 4.0
+    "n": 47,
+    "winPct": 68,
+    "median20dGrossPct": 4.2
    },
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   {
    "sym": "ICICIBANK",
-   "mom6m": 25.1,
-   "ref": 1571.6,
+   "mom6m": 29.3,
+   "ref": 1590.0,
    "qty": 0,
-   "stop": 1445.87,
+   "stop": 1462.8,
    "alertLevels": {
-    "a10": 1728.76,
-    "a15": 1807.34,
-    "a20": 1885.92
+    "a10": 1749.0,
+    "a15": 1828.5,
+    "a20": 1908.0
    },
    "replay": {
     "n": 30,
     "winPct": 7,
     "median20dGrossPct": -4.3
    },
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   },
   {
-   "sym": "BHARTIARTL",
-   "mom6m": 21.4,
-   "ref": 2109.0,
+   "sym": "BAJFINANCE",
+   "mom6m": 24.1,
+   "ref": 1115.0,
    "qty": 0,
-   "stop": 1940.28,
+   "stop": 1025.8,
    "alertLevels": {
-    "a10": 2319.9,
-    "a15": 2425.35,
-    "a20": 2530.8
+    "a10": 1226.5,
+    "a15": 1282.25,
+    "a20": 1338.0
    },
    "replay": {
-    "n": 45,
-    "winPct": 58,
-    "median20dGrossPct": 1.9
+    "n": 82,
+    "winPct": 40,
+    "median20dGrossPct": -2.2
    },
-   "date": "2026-11-11"
+   "date": "2026-11-12"
   }
  ],
  "replayMethod": "Setup = symbol in daily 6m-momentum top3 among universe members above their own 50dma, computed from close of day t. Entry at close t+1 (signal is only knowable after close t), exit at close 20 trading days later. GROSS of costs and slippage - the app applies 0.25% cost at open in paper P&L. A symbol can qualify on many consecutive days, so windows overlap and n overstates the number of independent bets. winPct = share of windows with positive GROSS return over 20 trading days; it is NOT the odds of hitting an alert level and NOT an expected profit. Small sample, 2y Yahoo data only.",
