@@ -1,26 +1,26 @@
 {
- "asof": "2026-11-16",
+ "asof": "2026-11-17",
  "label": "Trade",
  "checks": [
   [
    "Nifty above 200-day average",
    true,
-   "25291 vs 23992"
+   "25387 vs 23993"
   ],
   [
    "Nifty above 20-day average",
    true,
-   "25291 vs 23757"
+   "25387 vs 23869"
   ],
   [
    "India VIX between 12 and 20",
    true,
-   "15.7"
+   "15.5"
   ],
   [
    "Opening gap under 1%",
    true,
-   "+0.25% (last day open vs prior close)"
+   "-0.05% (last day open vs prior close)"
   ],
   [
    "Breadth: 50%+ stocks above 50-day avg",
@@ -30,58 +30,58 @@
  ],
  "signals": [
   {
-   "sym": "KOTAKBANK",
-   "mom6m": 29.2,
-   "ref": 494.2,
-   "qty": 0,
-   "stop": 454.66,
-   "alertLevels": {
-    "a10": 543.62,
-    "a15": 568.33,
-    "a20": 593.04
-   },
-   "replay": {
-    "n": 49,
-    "winPct": 69,
-    "median20dGrossPct": 4.2
-   },
-   "date": "2026-11-16"
-  },
-  {
    "sym": "ICICIBANK",
-   "mom6m": 28.3,
-   "ref": 1585.0,
+   "mom6m": 29.5,
+   "ref": 1598.7,
    "qty": 0,
-   "stop": 1458.2,
+   "stop": 1470.8,
    "alertLevels": {
-    "a10": 1743.5,
-    "a15": 1822.75,
-    "a20": 1902.0
+    "a10": 1758.57,
+    "a15": 1838.5,
+    "a20": 1918.44
    },
    "replay": {
-    "n": 29,
-    "winPct": 7,
-    "median20dGrossPct": -4.5
+    "n": 30,
+    "winPct": 10,
+    "median20dGrossPct": -4.3
    },
-   "date": "2026-11-16"
+   "date": "2026-11-17"
   },
   {
-   "sym": "HCLTECH",
-   "mom6m": 25.6,
-   "ref": 1384.6,
+   "sym": "KOTAKBANK",
+   "mom6m": 28.7,
+   "ref": 497.2,
    "qty": 0,
-   "stop": 1273.83,
+   "stop": 457.42,
    "alertLevels": {
-    "a10": 1523.06,
-    "a15": 1592.29,
-    "a20": 1661.52
+    "a10": 546.92,
+    "a15": 571.78,
+    "a20": 596.64
    },
    "replay": {
-    "n": 3,
-    "winPct": 67,
-    "median20dGrossPct": 2.7
+    "n": 50,
+    "winPct": 70,
+    "median20dGrossPct": 4.5
    },
-   "date": "2026-11-16"
+   "date": "2026-11-17"
+  },
+  {
+   "sym": "BAJFINANCE",
+   "mom6m": 23.9,
+   "ref": 1121.1,
+   "qty": 0,
+   "stop": 1031.41,
+   "alertLevels": {
+    "a10": 1233.21,
+    "a15": 1289.26,
+    "a20": 1345.32
+   },
+   "replay": {
+    "n": 80,
+    "winPct": 41,
+    "median20dGrossPct": -2.8
+   },
+   "date": "2026-11-17"
   }
  ],
  "replayMethod": "Setup = symbol in daily 6m-momentum top3 among universe members above their own 50dma, computed from close of day t. Entry at close t+1 (signal is only knowable after close t), exit at close 20 trading days later. GROSS of costs and slippage - the app applies 0.25% cost at open in paper P&L. A symbol can qualify on many consecutive days, so windows overlap and n overstates the number of independent bets. winPct = share of windows with positive GROSS return over 20 trading days; it is NOT the odds of hitting an alert level and NOT an expected profit. Small sample, 2y Yahoo data only.",
